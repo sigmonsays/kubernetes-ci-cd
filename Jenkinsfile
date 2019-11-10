@@ -14,7 +14,7 @@ node {
 
     stage "Build"
     
-        sh "docker login -u admin -p admin123 "
+        sh "docker login -u admin -p admin123 docker.grepped.org "
         sh "docker build -t ${imageName} -f applications/hello-kenzan/Dockerfile applications/hello-kenzan"
     
     stage "Push"
