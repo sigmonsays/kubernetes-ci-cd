@@ -8,7 +8,7 @@ node {
 
     tag = readFile('commit-id').replace("\n", "").replace("\r", "")
     appName = "hello-kenzan"
-    registryHost = "desktop4-dev2:30000/"
+    registryHost = "docker.grepped.org/"
     imageName = "${registryHost}${appName}:${tag}"
     env.BUILDIMG=imageName
 
